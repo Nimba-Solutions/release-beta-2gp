@@ -17,10 +17,10 @@ inputs:
 runs:
   using: "composite"
   steps:
-      uses: cumulus-actions/run-flow-scratch@v1
-      with:
-        dev-hub-auth-url: '${{ inputs.dev-hub-auth-url }}'
-        org-name: '${{ inputs.org-name }}'
-        cumulusci-version: '${{ inputs.cumulusci-version }}'
-        sfdx-version: '${{ inputs.sfdx-version }}'
-        flow-name: release_2gp_beta
+      - uses: cumulus-actions/run-flow-scratch@v1
+        with:
+          dev-hub-auth-url: '${{ inputs.dev-hub-auth-url }}'
+          org-name: '${{ inputs.org-name }}'
+          cumulusci-version: '${{ inputs.cumulusci-version }}'
+          sfdx-version: '${{ inputs.sfdx-version }}'
+          flow-name: release_2gp_beta
